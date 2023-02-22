@@ -31,5 +31,6 @@
   "bugs": {
     "url": "https://github.com/Youssefgamer685/utiller/issues"
   },
-  "homepage": "https://github.com/Youssefgamer685/utiller"
+  "homepage": "https://github.com/Youssefgamer685/utiller",
+  "files": ["lib/**/*"]
 }
