@@ -1,2 +1,2 @@
 # utiller
-Utiller is library that includes some properties and functions help you.
+Utiller is library that contains a lot of properties and functions that may help you.
