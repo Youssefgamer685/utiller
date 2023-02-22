@@ -2,9 +2,14 @@
   "name": "utiller",
   "version": "1.0.0",
   "description": "Utiller is library that contains a lot of properties and functions that may help you.",
-  "main": "index.js",
+  "main": "./cjs/index.js",
+  "module": "./esm/index.js",
+  "types": "./cjs/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:esm": "tsc",
+    "build:cjs": "tsc --outDir ./lib/cjs --module commonjs",
+    "finish": "cp package.json ./lib/package.json && cp LICENSE ./lib/LICENSE && cp README.md ./lib/README.md",
+    "build": "npm run build:esm && npm run build:cjs && npm run finish"
   },
   "repository": {
     "type": "git",
