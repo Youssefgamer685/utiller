@@ -1,12 +1,17 @@
 import createErrorThrower from "./create-error-thrower.js";
 
-const throwError = createErrorThrower();
+const throwError = createErrorThrower("zFill");
 
 /** Fills empty indexes with 0 */
-function zFill(iterable: any, length: number) {
+function zFill(iterable: any, length: number = String(iterable).length): string {
+  if (!iterable) throwError("\"iterable\" parameter is required!");
   const _iterable = String(iterable);
-  const result = [];
-  
-  for (let i = 0; i < length; i++) result.unshift(_iterable[i] ? _iterable[i] : "0");
+  if (_iterable.length <= length) return _iterable;
+
+  const result = [_iterable];
+
+  for (let i = _iterable.length; i < length; i++) result.unshift("0");
   return result.join("");
 };
+
+export default zFill;

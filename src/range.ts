@@ -1,6 +1,6 @@
 import createErrorThrower from "./create-error-thrower.js";
 
-const throwError = createErrorThrower(range);
+const throwError = createErrorThrower("range");
 
 /** ``range`` is a function that returns an array of number depending on `to` and `from` parameters. */
 function range(to: number, from: number = 0): number[] {

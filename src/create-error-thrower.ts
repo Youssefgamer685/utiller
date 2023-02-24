@@ -1,6 +1,6 @@
-function createErrorThrower(fn: Function) {
+function createErrorThrower(fnName: string) {
   return (err?: string) => {
-    throw Error(`[${fn.name}] ${err ? ` => ${err}` : ""}`);
+    throw Error(`[${fnName}] ${err ? ` => ${err}` : ""}`);
   };
 };
 
