@@ -2,15 +2,14 @@
   "compilerOptions": {
     "target": "ES5",
     "module": "ES2015",
+    "lib": ["DOM", "ES2015"],
     "declaration": true,
     "outDir": "./lib/esm",
     "baseUrl": ".",
-    "skipLibCheck": true,
     "declarationMap": true,
     "strict": true,
+    "moduleResolution": "node",
     "esModuleInterop": true,
-    "allowJs": true,
-    "noEmitOnError": true
   },
   "include": ["src"],
   "exclude": ["node_modules", "**/__test__/*"]

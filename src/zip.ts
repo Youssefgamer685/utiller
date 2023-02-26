@@ -1,11 +1,8 @@
-import createErrorThrower from "./create-error-thrower.js";
+import createErrorThrower from "./create-error-thrower";
 
 const throwError = createErrorThrower("zip");
 
-/** 
- * ``zip`` is a function that zip all given data to one iterable.
- * - Note: If you want to zip objects, you should set generic type (Typescript only).
-*/
+/** zips all given data to one iterable. */
 function zip<T = any>(...data: any[]): T {
   if (data.length === 0) throwError("There is no any given data to zip!");
   if (data.some((i) => typeof i === "object" && !Array.isArray(i))) {
