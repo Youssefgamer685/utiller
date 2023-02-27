@@ -5,11 +5,17 @@ Utiller is library that contains a lot of properties and functions that may help
 
 ### Installation
 - npm:
-  ```npm install utiller```
+  ```bash
+  npm install utiller
+  ```
 - yarn:
-  ```yarn add utiller```
+  ```bash
+  yarn add utiller
+  ```
 - pnpm:
-  ```pnpm add utiller```
+  ```bash
+  pnpm add utiller
+  ```
 
 ### Usage
 - Install The Package ([install](#Installation))
