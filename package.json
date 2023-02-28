@@ -10,7 +10,7 @@
     "build:cjs": "tsc --outDir ./lib/cjs --module commonjs",
     "finish": "cp package.json ./lib/ && cp LICENSE ./lib/ && cp README.md ./lib/",
     "build": "npm run build:esm && npm run build:cjs && npm run finish",
-    "test": "jest --config jestconfig.json"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
