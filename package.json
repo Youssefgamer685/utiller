@@ -4,11 +4,11 @@
   "description": "Utiller is library that contains a lot of properties and functions that may help you.",
   "main": "./cjs/index.js",
   "module": "./esm/index.js",
-  "types": "./cjs/index.d.ts",
+  "types": "./lib/index.d.ts",
   "scripts": {
     "build:esm": "tsc",
-    "build:cjs": "tsc --outDir ./lib/cjs --module commonjs",
-    "finish": "cp package.json ./lib/ && cp LICENSE ./lib/ && cp README.md ./lib/",
+    "build:cjs": "tsc --outDir ./dist/cjs --module commonjs",
+    "finish": "cp package.json ./dist/ && cp LICENSE ./dist/ && cp README.md ./dist/",
     "build": "npm run build:esm && npm run build:cjs && npm run finish",
     "test": "jest"
   },
@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/Youssefgamer685/utiller",
   "files": [
-    "lib/**/*"
+    "dist/**/*"
   ],
   "devDependencies": {
    "@types/jest": "^29.4.0",
