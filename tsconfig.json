@@ -1,15 +1,14 @@
 {
   "compilerOptions": {
-    "target": "ES5",
-    "module": "ES2015",
+    "target": "ES6",
+    "module": "ESNext",
     "lib": ["DOM", "ES2015"],
     "declaration": true,
     "declarationDir": "./dist/lib",
     "outDir": "./dist/esm",
-    "baseUrl": ".",
     "declarationMap": true,
     "strict": true,
-    "moduleResolution": "node",
+    "moduleResolution": "classic",
     "esModuleInterop": true,
   },
   "include": ["src"],

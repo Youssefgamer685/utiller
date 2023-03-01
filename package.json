@@ -2,6 +2,7 @@
   "name": "utiller",
   "version": "1.0.0",
   "description": "Utiller is library that contains a lot of properties and functions that may help you.",
+  "type": "module",
   "main": "./cjs/index.js",
   "module": "./esm/index.js",
   "types": "./lib/index.d.ts",
